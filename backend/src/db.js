@@ -1,16 +1,28 @@
 const Database = require('better-sqlite3');
-const path = require('path');
 
-const db = new Database(path.join(__dirname, '..', 'sweetshop.db'));
+// Database file open karo (agar naam alag hai to yahan change kar dena)
+const db = new Database('sweetshop.db');  
 
-db.exec(`
-  CREATE TABLE IF NOT EXISTS sweets (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    category TEXT NOT NULL,
-    price REAL NOT NULL,
-    quantity INTEGER NOT NULL
-  );
-`);
+// SELECT * / multiple rows
+function all(sql, params = []) {
+  const stmt = db.prepare(sql);
+  return stmt.all(params);
+}
 
-module.exports = db;
+// SELECT ... WHERE / single row
+function get(sql, params = []) {
+  const stmt = db.prepare(sql);
+  return stmt.get(params);
+}
+
+// INSERT / UPDATE / DELETE
+function run(sql, params = []) {
+  const stmt = db.prepare(sql);
+  return stmt.run(params);
+}
+
+module.exports = {
+  all,
+  get,
+  run,
+};
