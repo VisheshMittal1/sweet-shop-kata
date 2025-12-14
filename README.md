@@ -1,6 +1,5 @@
 ## Sweet Shop Kata
-Sweet Shop ek full‑stack demo application hai jisme users login/register karke real‑time stock ke saath mithaiyan dekh sakte hain, purchase kar sakte hain, aur cart manage kar sakte hain.
-Is project ka goal secure JWT authentication, role‑based access (user/admin), TDD, aur clean React UI practice karna hai.
+Sweet Shop is a full‑stack demo application where users can register and log in to view sweets with real‑time stock, purchase them, and manage their cart. The goal of this project is to practice secure JWT authentication, role‑based access (user/admin), TDD, and a clean React UI.
 
 ## Tech stack
 Backend: Node.js, Express, SQLite (ya jo DB tumne use ki hai), JWT authentication, Jest + Supertest tests
