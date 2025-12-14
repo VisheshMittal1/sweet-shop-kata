@@ -29,16 +29,15 @@ npm run dev      # client: http://localhost:5173
 Backend ke .env file me apni DB aur JWT secret ki values set karni hongi (example: PORT, DATABASE_URL / DB_PATH, JWT_SECRET).
 
 ## Tests
-bash
-cd backend
-npm test         # Jest + Supertest test suite
+- bash
+- cd backend
+- npm test         
 Coverage ke liye:
 
-bash
-cd backend
-npm test -- --coverage
-Sample credentials
-Apne seed/initial users ke hisaab se yahan actual creds likh dena:
+- bash
+- cd backend
+- npm test -- --coverage
+- Sample credentials
 
 text
 Admin
@@ -51,10 +50,10 @@ Normal user
 
 ## Front-End 
 cd C:\Users\HP\sweet-shop-kata\backend\client
-npm install  
-npm run dev        # URL: http://localhost:5173
+- npm install  
+- npm run dev        # URL: http://localhost:5173
 
 ## Backend
 cd C:\Users\HP\sweet-shop-kata\backend
-npm install
-npm run dev        # URL: http://localhost:4000
+- npm install
+- npm run dev        # URL: http://localhost:4000
