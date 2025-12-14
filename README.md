@@ -48,3 +48,13 @@ Admin
 Normal user
 - Email: user@example.com
 - Password: user123
+
+## Front-End 
+cd C:\Users\HP\sweet-shop-kata\backend\client
+npm install  
+npm run dev        # URL: http://localhost:5173
+
+## Backend
+cd C:\Users\HP\sweet-shop-kata\backend
+npm install
+npm run dev        # URL: http://localhost:4000
