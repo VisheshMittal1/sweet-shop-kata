@@ -18,7 +18,6 @@ backend/           # Node.js + Express API
 bash
 cd backend
 npm test         
-Coverage ke liye:
 
 bash
 cd backend
