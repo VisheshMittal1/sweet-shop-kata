@@ -56,4 +56,4 @@ cd C:\Users\HP\sweet-shop-kata\backend\client
 ## Backend
 cd C:\Users\HP\sweet-shop-kata\backend
 - npm install
-- npm run dev        # URL: http://localhost:4000
+- npm run dev        # URL: http://localhost:4000                                                                           
